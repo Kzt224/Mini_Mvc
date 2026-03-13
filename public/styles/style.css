@@ -1,0 +1,230 @@
+* {
+    background-color: rgb(34, 33, 33);
+}
+
+:root {
+    --red_700: rgba(255, 0, 0, 0.479);
+    --border-color: rgba(43, 151, 43, 0.74);
+    --bg-secondary: rgba(122, 119, 119, 0.288);
+    --border-gray: rgba(177, 166, 166, 0.288);
+    --border-white: rgba(248, 243, 243, 0.829);
+}
+
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.err-box{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+}
+
+.text-white {
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.text-danger{
+    color: rgb(243, 70, 70);
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.second-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-container {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.data-table {
+    width: 500px;
+    padding: 15px;
+    height: auto;
+}
+
+.data-table thead tr th {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+}
+
+.data-table tbody tr td {
+    border: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding: 10px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn {
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: inherit;
+}
+
+
+.btn:hover {
+    background-color: var(--bg-secondary);
+}
+
+.btn-edit {
+    border: 1px solid #268bdd;
+    color: #268bdd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.btn-submit {
+    border: 1px solid #39eb56;
+    color: #39eb56;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.btn-delete {
+    border: 1px solid var(--red_700);
+    color: red;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.btn-add {
+    align-self: flex-end;
+    border: 1px solid cyan;
+    color: cyan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+.input {
+    color: white;
+    border: 0;
+    outline: 0;
+    width: 50px;
+}
+
+.form {
+    border: 1px solid var(--border-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    padding: 30px;
+    gap: 15px;
+    margin: 15px;
+    border-radius: 20px;
+
+}
+
+.form:hover {
+    box-shadow: 0px 1px 3px rgba(243, 233, 233, 0.911);
+}
+
+.input-group {
+  position: relative;
+  margin: 15px 0;
+  width: 100%;
+}
+
+
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+  box-sizing: border-box;
+}
+
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: hsl(0, 9%, 96%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+  padding: 0 4px;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 15px;
+  color: #268bdd;
+}
+
+.input-full {
+    color: white;
+    width: 100%;
+    outline: 1px solid var(--border-gray);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border-white);
+}
+
+.check {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.ctn-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
